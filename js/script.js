@@ -13,10 +13,15 @@ $(function posterChild(){
     $('button').on('click', submissionChecker);
     
      function submissionChecker() {
-        if ($(".selected").length > 0) {
-            alert('Placeholder for generating poster.');
-        }
-        else { alert('Please select a poster.'); }    
+        if ($('input').val().length > 0) {
+             if ($(".selected").length > 0) {
+                alert('Placeholder for generating poster.');
+            }
+            else { alert('Please select a poster.'); } 
+        }  
+        else { 
+            alert('Enter your Office 365 email address.');
+         }
      }
 
 });
